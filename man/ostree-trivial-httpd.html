@@ -1,0 +1,13 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>ostree trivial-httpd</title><meta name="generator" content="DocBook XSL Stylesheets Vsnapshot"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="refentry"><a name="ostree"></a><div class="titlepage"></div><div class="refnamediv"><h2>Name</h2><p>ostree-trivial-httpd &#8212; Simple webserver</p></div><div class="refsynopsisdiv"><h2>Synopsis</h2><div class="cmdsynopsis"><p><code class="command">ostree trivial-httpd</code>  [OPTIONS...] [DIR]</p></div></div><div class="refsect1"><a name="idm46282168861104"></a><h2>Description</h2><p>
+            This runs a simple webserver and keeps it running until killed.  If DIR is not specified, it defaults to the current directory.
+        </p></div><div class="refsect1"><a name="idm46282168859920"></a><h2>Options</h2><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="option">--daemonize</code>,<code class="option">-d</code></span></dt><dd><p>
+                    Fork into background when ready.
+                </p></dd><dt><span class="term"><code class="option">--autoexit</code></span></dt><dd><p>
+                    Automatically exit when directory is deleted.
+                </p></dd><dt><span class="term"><code class="option">--port-file</code>,<code class="option">-p</code>="PATH"</span></dt><dd><p>
+                    Write port number to PATH (- for standard output).
+                </p></dd><dt><span class="term"><code class="option">--port</code>,<code class="option">-P</code></span></dt><dd><p>
+                    Use the specified TCP port to listen on.
+                </p></dd><dt><span class="term"><code class="option">--force-range-requests</code></span></dt><dd><p>
+                    Force range requests by only serving half of files.
+                </p></dd></dl></div></div><div class="refsect1"><a name="idm46282172820304"></a><h2>Example</h2><p><span class="command"><strong>$ ostree trivial-httpd</strong></span></p></div></div></body></html>
