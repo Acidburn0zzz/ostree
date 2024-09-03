@@ -91,13 +91,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Download install tree
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: inst.tar.zst
       - name: Install
         run: tar -C / -xvf inst.tar.zst && rm -f inst.tar.zst
       - name: Download test binary
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: ostree-test
       - name: Install
